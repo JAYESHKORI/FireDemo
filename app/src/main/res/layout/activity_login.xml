@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jayesh.firedemo.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:hint="Enter Your Email"
+            android:id="@+id/etEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"/>
+        <EditText
+            android:inputType="textPassword"
+            android:hint="Enter Your Password"
+            android:id="@+id/etPwd"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"/>
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_margin="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSignup"
+            android:text="Don't have an Account? SignUp Here"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="User Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:id="@+id/tvLogin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:forceHasOverlappingRendering="false" />
+
+</RelativeLayout>
